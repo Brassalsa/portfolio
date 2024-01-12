@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect, useRef, RefObject } from "react";
 
 export const useInView = (): [boolean, RefObject<any>] => {
