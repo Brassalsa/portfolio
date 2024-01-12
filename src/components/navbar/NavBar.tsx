@@ -2,7 +2,7 @@ const NavBar = () => {
   return (
     <nav className="flex gap-2">
       <span className="flex-1">
-        <a className="fancy" href={"/#top"}>
+        <a className="fancy" href={"/#hero"}>
           Portfolio
         </a>
       </span>
