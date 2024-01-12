@@ -2,26 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html,
+body {
+  @apply scroll-smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply overflow-x-hidden;
+}
+
+a.fancy {
+  background-image: linear-gradient(90deg, red 50%, currentColor 50%);
+  background-size: 200% 3px;
+  background-repeat: no-repeat;
+  background-position: right 1.5em;
+  padding-block: 0.25em;
+  transition: color 500ms, background-position 500ms;
+
+  &:hover,
+  &:focus {
+    background-position: left 1.5em;
+    color: lightgray;
+  }
+}
+
+.invisible {
+  opacity: 0;
+}
+.from-right {
+  animation: slide-from-right 2s;
+}
+
+.from-left {
+  animation: slide-from-left 2s;
+}
+
+.bounce {
+  animation: image-bounce 2s infinite alternate;
+}
+
+.scale-up-down {
+  animation: scale-up-down 2s infinite alternate;
+}
+
+.up {
+  transform: translateY(-100%);
+}
+
+.down {
+  transform: translateY(0%);
+}
+
+@keyframes image-bounce {
+  from {
+    transform: translateY(-5%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes scale-up-down {
+  from {
+    transform: scale(0.95);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  80% {
+    transform: translateX(-2%);
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  80% {
+    transform: translateX(2%);
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
