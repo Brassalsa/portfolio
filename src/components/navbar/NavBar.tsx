@@ -6,7 +6,7 @@ const NavBar = () => {
     <nav className="flex gap-2">
       <span className="flex-1">
         <Link className="fancy" href={"/#top"}>
-          Logo
+          Portfolio
         </Link>
       </span>
       <Link className="fancy" href={"/#skills"}>
