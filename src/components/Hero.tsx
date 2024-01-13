@@ -11,14 +11,15 @@ const Hero = () => {
           src={"/svg/programmer.svg"}
           alt="programmer"
           className="bounce"
+          priority={true}
         />
       </div>
       <InViewContainer
         onViewClassName="from-right"
         offViewClassName="invisible"
       >
-        <h3 className="text-xl text-red-400">Saurav Chauhan</h3>
-        <h2 className="text-4xl">
+        <h3 className="text-2xl text-red-400">Saurav Chauhan</h3>
+        <h2 className="text-3xl sm:text-4xl">
           Full Stack developer <br /> and a Software Engineer
         </h2>
       </InViewContainer>

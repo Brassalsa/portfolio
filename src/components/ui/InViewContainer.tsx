@@ -17,7 +17,7 @@ const InViewContainer = ({
 }: Props) => {
   const [isInView, elementRef] = useInView();
   return (
-    <span className="" ref={elementRef}>
+    <div className="max-w-full" ref={elementRef}>
       <div
         className={`${className} ${
           isInView ? onViewClassName : offViewClassName
@@ -25,7 +25,7 @@ const InViewContainer = ({
       >
         {children}
       </div>
-    </span>
+    </div>
   );
 };
 

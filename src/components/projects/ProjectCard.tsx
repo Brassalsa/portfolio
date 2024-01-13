@@ -18,7 +18,7 @@ const ProjectCard = (p: Props) => {
         height={200}
         width={200}
         alt=""
-        className="justify-self-start"
+        className="justify-self-start h-auto w-auto"
       />
 
       <div className="break-words flex flex-col gap-2 justify-center items-center">

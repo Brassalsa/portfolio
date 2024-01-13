@@ -8,7 +8,7 @@ body {
 }
 
 body {
-  @apply overflow-x-hidden;
+  @apply px-2 overflow-x-hidden break-words bg-black text-slate-100 max-w-[100vw];
 }
 
 a.fancy {
@@ -24,6 +24,10 @@ a.fancy {
     background-position: left 1.5em;
     color: lightgray;
   }
+}
+
+.heading {
+  text-shadow: 2px 2px 15px white, 4px 4px 15px red;
 }
 
 .invisible {

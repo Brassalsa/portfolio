@@ -5,7 +5,7 @@ import ContactCard from "./ContactCard";
 
 const Contact = () => {
   return (
-    <Container className="py-7 mb-6">
+    <Container className="py-7 mb-6 overflow-x-hidden">
       <div id="contact">
         <Heading>Socials</Heading>
       </div>
