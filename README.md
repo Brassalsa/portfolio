@@ -2,6 +2,9 @@
 
 This is a simple Portfolio made with [Next.js 14](https://nextjs.org/).
 
+Deployed on [Netlify](https://www.netlify.com/)
+
+[Live Preview](https://saurav-chauhan-portfolio.netlify.app/)
 ## Installation
 
 Install all the dependencies
