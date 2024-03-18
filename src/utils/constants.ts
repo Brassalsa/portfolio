@@ -34,6 +34,10 @@ export const skills: Skills = [
     url: "/svg/python.svg",
   },
   {
+    label: "Go lang",
+    url: "/svg/golang.svg",
+  },
+  {
     label: "Node.js",
     url: "/svg/nodeJS.svg",
   },
