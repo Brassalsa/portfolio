@@ -91,7 +91,7 @@ export const projects: Projects = [
   },
   {
     label: "Blog Application",
-    info: "Blog Application made with Next.js. User can perform CRUD operations",
+    info: "Blog Application made with Next.js, ShadCn, Acternity and more. User can perform CRUD operations",
     github: "https://github.com/Brassalsa/blog-app-next",
   },
   {
