@@ -3,14 +3,6 @@ type Skills = {
   url: string;
 }[];
 
-type Projects = {
-  img?: string;
-  label: string;
-  info: string;
-  github: string;
-  live?: string;
-}[];
-
 export const skills: Skills = [
   {
     label: "HTML",
@@ -84,16 +76,23 @@ export const skills: Skills = [
   },
 ];
 
+type Projects = {
+  img?: string;
+  label: string;
+  info: string;
+  github: string;
+  live?: string;
+}[];
 export const projects: Projects = [
   {
     label: "User Management System",
-    info: "User Management system is a simple REST node application, made with express.js, mongoDB and more.",
+    info: "User Management system is REST application, made with express.js, mongoDB and more.",
     github: "https://github.com/Brassalsa/user-management",
   },
   {
     label: "Blog Application",
     info: "Blog Application made with Next.js. User can perform CRUD operations",
-    github: "https://github.com/Brassalsa/Basic-Blog-App",
+    github: "https://github.com/Brassalsa/blog-app-next",
   },
   {
     img: "/img/dummy-products.png",
@@ -108,5 +107,15 @@ export const projects: Projects = [
     info: "Cart Application made with React.js. It fetch data from fakestore api.",
     github: "https://github.com/Brassalsa/cart-app",
     live: "https://compromise-io.netlify.app/",
+  },
+  {
+    label: "M-chat",
+    info: "Full stack chat application made with Go, HTMX, mongoDb and more.",
+    github: "https://github.com/Brassalsa/m-chat",
+  },
+  {
+    label: "Distributed File Storage",
+    info: "Made with Go lang, distributed file storage with encryption",
+    github: "https://github.com/Brassalsa/dist-file-store",
   },
 ];

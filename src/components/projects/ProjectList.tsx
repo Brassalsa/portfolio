@@ -7,7 +7,7 @@ const ProjectList = () => {
     <Container>
       <div id="projects">
         <Heading>Projects</Heading>
-        <div className="flex gap-4 flex-wrap justify-center ">
+        <div className="flex flex-wrap gap-4 justify-center items-center">
           {projects.map((i) => (
             <InViewContainer
               onViewClassName="from-left"

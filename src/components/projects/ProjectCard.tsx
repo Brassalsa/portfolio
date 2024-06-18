@@ -12,7 +12,7 @@ type Props = {
 
 const ProjectCard = (p: Props) => {
   return (
-    <div className="flex flex-col gap-2 justify-center items-center w-60 hover:opacity-90 transition-all duration-200 p-4 rounded-md bg-white/10 relative group overflow-y-hidden">
+    <div className="flex flex-col gap-2 justify-center items-center h-80 w-60 hover:opacity-90 transition-all duration-200 p-4 rounded-md bg-white/10 relative group overflow-y-hidden">
       <Image
         src={p.img || "/svg/default.svg"}
         height={200}
