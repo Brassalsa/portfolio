@@ -95,6 +95,13 @@ export const projects: Projects = [
     github: "https://github.com/Brassalsa/blog-app-next",
   },
   {
+    img: "/img/dashboard.png",
+    label: "Dashboard ",
+    info: "This is dashboard page made with NextJs 14 and Tanstack table with Shadcn-ui and Tailwind CSS. User can create, edit and delete users.",
+    github: "https://github.com/Brassalsa/admin-dashboard",
+    live: "https://admin-dashboard-ui-next.netlify.app/",
+  },
+  {
     img: "/img/dummy-products.png",
     label: "Dummy Products",
     info: "Dummy Products application made with Next.js.",
